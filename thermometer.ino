@@ -1,1 +1,1 @@
-readDhtSensor
+thermometer
