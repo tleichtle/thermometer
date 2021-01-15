@@ -1,0 +1,18 @@
+* Push or poll? I.e. should the sensor push data to a server or should clients poll the sensor?
+    -> Poll. Sensor offers API.
+    -> ? Recheck for "very low energy usage" (e.g. sensor battery version)
+
+* What format should the data be offered?
+    -> JSON.
+    -> E.g. see https://techtutorialsx.com/2017/04/27/esp32-creating-json-message/
+
+* Should the sensor buffer values?
+    -> No. Readings are done when clients request it.
+
+* What about the time?
+    -> Clients can map their requests to the time.
+    -> Could be added to json, but why?
+
+* Should temperature be offered in degree and fahrenheit?
+    -> No, degrees only. Clients can do the math if needed.
+
