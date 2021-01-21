@@ -1,1 +1,1 @@
-thermometer
+thermometer_ESP8266
